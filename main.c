@@ -4,15 +4,13 @@ int main(void)
 {
     int number;
 
-    printf("정수 하나를 입력하세요 : ");
+    printf("input an integer: ");
     scanf("%i", &number);
 
     if (number > 0)
-        printf("양수입니다.\n");
-    else if (number < 0)
-        printf("음수입니다.\n");
+        printf("Absolute value is %d!\n", number);
     else
-        printf("0 입니다.\n");
+        printf("Absolute value is %d!\n", -number);
 
     return 0;
 }
